@@ -1,0 +1,16 @@
+<section class="p-5">
+    <form class="form border p-2">
+        <section>
+            <label class="form-label" for="data_parent">Ingrese Mensaje</label>
+            <input type="text" [(ngModel)]="data_parent" name="data_parent" class="form-control-sm">
+        </section>
+        <!-- <section>
+            section:{{data_parent}}
+        </section> -->
+
+    </form>
+
+    <section>
+        <app-child1 [message_parent]="data_parent"></app-child1>
+    </section>
+</section>
